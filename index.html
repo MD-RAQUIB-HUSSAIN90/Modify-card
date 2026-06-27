@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="form-container">
-        
+
+        <form action="">
+            <label for="imgUrl">Image URL</label>
+            <input type="text" id="imgUrl" placeholder="https://example.com/photo.jpg">
+
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fulName" placeholder="Enter full name">
+            <label for="homeTown">Home Town</label>
+            <input type="text" id="homeTown" placeholder="Enter home town">
+            <label for="purpose">Purpose</label>
+            <input type="text" id="purpose" placeholder="e.g., Quick appointment">
+
+
+            <label for="category">Category</label>
+            <label class="tag-checkbox">
+                <input type="radio" name="category" value="emergency">
+                <span>Emergency</span>
+                <input type="radio" name="important" value="important">
+                <span>Important</span>
+                <input type="radio" name="urgent" value="urgent">
+                <span>Urgent</span>
+                <input type="radio" name="no-Rush" value="no_rush">
+                <span>No Rush</span>
+            </label>
+            <button>Create Notes</button>
+        </form>
+        <button class="close">close</button>
+
+    </div>
+    <div class="note-container">
+        <div class="left-icons">
+            <button id="add-note"><i class="ri-add-line"></i></button>
+            <button><i class="ri-arrow-up-line"></i></button>
+            <button><i class="ri-arrow-down-line"></i></button>
+        </div>
     </div>
 
 
-    <script  src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
