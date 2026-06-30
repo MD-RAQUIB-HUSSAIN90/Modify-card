@@ -26,17 +26,29 @@
                     <input type="text" id="purpose" placeholder="e.g., Quick appointment" class="inputType">
                 </div>
 
-                <label for="category" id="category">Category</label>
-                <label class="tag-checkbox">
-                    <input type="radio" name="plan" value="emergency">
-                    <span>Emergency</span>
-                    <input type="radio" name="plan" value="important">
-                    <span>Important</span>
-                    <input type="radio" name="plan" value="urgent">
-                    <span>Urgent</span>
-                    <input type="radio" name="plan" value="no_rush">
-                    <span>No Rush</span>
-                </label>
+                <label id="category">Category</label>
+
+                <div class="tag-checkbox">
+                    <label>
+                        <input type="radio" name="plan" value="emergency">
+                        Emergency
+                    </label>
+
+                    <label>
+                        <input type="radio" name="plan" value="important">
+                        Important
+                    </label>
+
+                    <label>
+                        <input type="radio" name="plan" value="urgent">
+                        Urgent
+                    </label>
+
+                    <label>
+                        <input type="radio" name="plan" value="no_rush">
+                        No Rush
+                    </label>
+                </div>
                 <button class="submit btn">Create Notes</button>
             </form>
             <button class="close btn">Close</button>

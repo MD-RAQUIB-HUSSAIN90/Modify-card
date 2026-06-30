@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  bottom: 0;
+  padding: 0;
   background-color: rgb(31, 29, 29);
   color: white;
   display: flex;
@@ -50,11 +50,21 @@ body {
   margin-top: 10px;
   text-decoration: underline;
 }
+
 .tag-checkbox {
   display: flex;
   flex-direction: column;
-  font-size: 15px;
+  gap: 10px;
+  margin-top: 10px;
 }
+
+.tag-checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
 .submit {
   background-color: black;
   color: white;
