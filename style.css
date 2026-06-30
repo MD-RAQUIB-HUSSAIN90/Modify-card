@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  bottom: 0;
+  background-color: rgb(31, 29, 29);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.outer {
+  padding: 25px;
+  border-radius: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: 0.02em solid rgb(136, 119, 119);
+}
+#action {
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.inputSection {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.inputType {
+  border-radius: 8px;
+  height: 1.6rem;
+  background-color: rgb(59, 57, 57);
+  border: none;
+  font-size: 1em;
+}
+.inputType::placeholder {
+  color: rgb(131, 125, 125);
+  position: relative;
+  left: 0.5em;
+  font-size: 0.9em;
+}
+
+#category {
+  margin-top: 10px;
+  text-decoration: underline;
+}
+.tag-checkbox {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+.submit {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+}
+
+.btn {
+  margin-top: 20px;
+  position: relative;
+  left: 7%;
+  border: none;
+  border-radius: 20px;
+  width: 18rem;
+  height: 2rem;
+  font-size: 10px;
+}
+
+.close {
+  color: white;
+  background-color: rgb(90, 8, 8);
+}

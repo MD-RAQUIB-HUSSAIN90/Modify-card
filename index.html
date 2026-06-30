@@ -9,41 +9,51 @@
 </head>
 
 <body>
-    <div class="form-container">
 
-        <form action="">
-            <label for="imgUrl">Image URL</label>
-            <input type="text" id="imgUrl" placeholder="https://example.com/photo.jpg">
+    <div class="outer">
+        <div class="form-container">
 
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fulName" placeholder="Enter full name">
-            <label for="homeTown">Home Town</label>
-            <input type="text" id="homeTown" placeholder="Enter home town">
-            <label for="purpose">Purpose</label>
-            <input type="text" id="purpose" placeholder="e.g., Quick appointment">
+            <form action="" id="action">
+                <div class="inputSection">
+                    <label for="imgUrl">Image URL</label>
+                    <input type="text" id="imgUrl" placeholder="https://example.com/photo.jpg" class="inputType">
 
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter full name" class="inputType">
+                    <label for="homeTown">Home Town</label>
+                    <input type="text" id="homeTown" placeholder="Enter home town" class="inputType">
+                    <label for="purpose">Purpose</label>
+                    <input type="text" id="purpose" placeholder="e.g., Quick appointment" class="inputType">
+                </div>
 
-            <label for="category">Category</label>
-            <label class="tag-checkbox">
-                <input type="radio" name="category" value="emergency">
-                <span>Emergency</span>
-                <input type="radio" name="important" value="important">
-                <span>Important</span>
-                <input type="radio" name="urgent" value="urgent">
-                <span>Urgent</span>
-                <input type="radio" name="no-Rush" value="no_rush">
-                <span>No Rush</span>
-            </label>
-            <button>Create Notes</button>
-        </form>
-        <button class="close">close</button>
+                <label for="category" id="category">Category</label>
+                <label class="tag-checkbox">
+                    <input type="radio" name="plan" value="emergency">
+                    <span>Emergency</span>
+                    <input type="radio" name="plan" value="important">
+                    <span>Important</span>
+                    <input type="radio" name="plan" value="urgent">
+                    <span>Urgent</span>
+                    <input type="radio" name="plan" value="no_rush">
+                    <span>No Rush</span>
+                </label>
+                <button class="submit btn">Create Notes</button>
+            </form>
+            <button class="close btn">Close</button>
 
-    </div>
-    <div class="note-container">
-        <div class="left-icons">
-            <button id="add-note"><i class="ri-add-line"></i></button>
-            <button><i class="ri-arrow-up-line"></i></button>
-            <button><i class="ri-arrow-down-line"></i></button>
+        </div>
+        <div class="note-container">
+            <div class="left-icons">
+                <button id="add-note">
+                    <i class="ri-add-line"></i>
+                </button>
+                <button>
+                    <i class="ri-arrow-up-line"></i>
+                </button>
+                <button>
+                    <i class="ri-arrow-down-line"> </i>
+                </button>
+            </div>
         </div>
     </div>
 
