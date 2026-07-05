@@ -1,2 +1,3 @@
 this is a mini project of ID cards....
 practiced on Dom, JS, fundamental 
+the work is persuring 
